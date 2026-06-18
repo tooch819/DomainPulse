@@ -1,0 +1,71 @@
+.watchlist-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.watchlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.watch-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.watch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.watch-header h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.watch-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.watch-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.watch-stat .label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.watch-stat .value {
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+.watch-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  gap: 1rem;
+}

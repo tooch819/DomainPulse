@@ -1,0 +1,134 @@
+.trending-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.trending-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.trending-section {
+  padding: 0;
+  overflow: hidden;
+}
+
+.section-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ranking-list, .sector-list {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ranking-item, .sector-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ranking-info, .sector-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.875rem;
+}
+
+.rank {
+  font-weight: 800;
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+
+.name {
+  font-weight: 700;
+  flex: 1;
+}
+
+.change {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.change.rising { color: var(--success); }
+.change.falling { color: var(--danger); }
+.change.stable { color: var(--text-muted); }
+
+.progress-container {
+  height: 8px;
+  background-color: var(--bg-main);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+.volume {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.trending-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-content h3 {
+  margin-bottom: 0.25rem;
+}
+
+.footer-content p {
+  opacity: 0.9;
+  font-size: 0.9375rem;
+}
+
+.btn-outline-white {
+  border-color: white;
+  color: white;
+  background: transparent;
+}
+
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .trending-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .trending-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+  }
+}
